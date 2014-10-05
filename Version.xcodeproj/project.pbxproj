@@ -11,6 +11,8 @@
 		FF24330819E0C39A0040EABE /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF24330719E0C39A0040EABE /* Version.swift */; };
 		FF27E1A219E0C5FA0012F7FF /* VersionEqualOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF27E1A119E0C5FA0012F7FF /* VersionEqualOperatorTests.swift */; };
 		FF27E1A419E0C9450012F7FF /* VersionInitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF27E1A319E0C9450012F7FF /* VersionInitTests.swift */; };
+		FF27E1A619E0CF030012F7FF /* VersionGreaterOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF27E1A519E0CF030012F7FF /* VersionGreaterOperatorTests.swift */; };
+		FF27E1A819E0D0700012F7FF /* VersionLowerOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF27E1A719E0D0700012F7FF /* VersionLowerOperatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +34,8 @@
 		FF24330719E0C39A0040EABE /* Version.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
 		FF27E1A119E0C5FA0012F7FF /* VersionEqualOperatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionEqualOperatorTests.swift; sourceTree = "<group>"; };
 		FF27E1A319E0C9450012F7FF /* VersionInitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionInitTests.swift; sourceTree = "<group>"; };
+		FF27E1A519E0CF030012F7FF /* VersionGreaterOperatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionGreaterOperatorTests.swift; sourceTree = "<group>"; };
+		FF27E1A719E0D0700012F7FF /* VersionLowerOperatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionLowerOperatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 			children = (
 				FF27E1A319E0C9450012F7FF /* VersionInitTests.swift */,
 				FF27E1A119E0C5FA0012F7FF /* VersionEqualOperatorTests.swift */,
+				FF27E1A519E0CF030012F7FF /* VersionGreaterOperatorTests.swift */,
+				FF27E1A719E0D0700012F7FF /* VersionLowerOperatorTests.swift */,
 				FF2432FD19E0C3650040EABE /* Supporting Files */,
 			);
 			path = VersionTests;
@@ -192,7 +198,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF27E1A219E0C5FA0012F7FF /* VersionEqualOperatorTests.swift in Sources */,
+				FF27E1A819E0D0700012F7FF /* VersionLowerOperatorTests.swift in Sources */,
 				FF1EDED419E0C49D00BBA392 /* Version.swift in Sources */,
+				FF27E1A619E0CF030012F7FF /* VersionGreaterOperatorTests.swift in Sources */,
 				FF27E1A419E0C9450012F7FF /* VersionInitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
