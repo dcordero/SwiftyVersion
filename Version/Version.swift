@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Version: Equatable {
+struct Version: Equatable, Printable {
     let components : Array<String>
     
     init (_ version: String) {
@@ -17,6 +17,10 @@ struct Version: Equatable {
     
     init (_ version: String, usingSeparator separator: String) {
         components = version.componentsSeparatedByString(separator)
+    }
+    
+    var description: String {
+        return ".".join(components)
     }
     
     func compare (otherVersion: Version) -> NSComparisonResult {
