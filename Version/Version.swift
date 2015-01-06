@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Version: Equatable, Printable {
+class Version: Equatable, Printable {
     let components : Array<String>
     
     init (_ version: String) {
