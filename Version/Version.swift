@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Version: Equatable, Printable {
+class Version: NSObject, Equatable, Printable {
     let components : Array<String>
     
     init (_ version: String) {
@@ -19,7 +19,7 @@ class Version: Equatable, Printable {
         components = version.componentsSeparatedByString(separator)
     }
     
-    var description: String {
+    override var description: String {
         return ".".join(components)
     }
     
