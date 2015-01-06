@@ -11,7 +11,7 @@ import Foundation
 class Version: NSObject, Equatable, NSCoding, Printable {
     let components : Array<String>
     
-    init (_ version: String) {
+    convenience init (_ version: String) {
         self.init(version, usingSeparator: ".")
     }
     
