@@ -8,15 +8,27 @@
 
 import Foundation
 
-struct Version: Equatable {
+class Version: NSObject, Equatable, NSCoding, Printable {
     let components : Array<String>
     
-    init (_ version: String) {
+    convenience init (_ version: String) {
         self.init(version, usingSeparator: ".")
     }
     
     init (_ version: String, usingSeparator separator: String) {
         components = version.componentsSeparatedByString(separator)
+    }
+    
+    required init(coder aDecoder: NSCoder) {
+        components = aDecoder.decodeObjectForKey("components") as Array<String>
+    }
+    
+    func encodeWithCoder(aCoder: NSCoder) {
+        aCoder.encodeObject(components, forKey: "components")
+    }
+    
+    override var description: String {
+        return ".".join(components)
     }
     
     func compare (otherVersion: Version) -> NSComparisonResult {
