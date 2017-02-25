@@ -31,7 +31,7 @@ class VersionEqualOperatorTests: XCTestCase {
         XCTAssertTrue(sut1 != sut2, "Wrong comparison result for operator ==")
     }
 
-    static var allTests : [(String, (VersionEqualOperatorTests) -> () throws -> Void)] {
+    static var allTests: [(String, (VersionEqualOperatorTests) -> () throws -> Void)] {
         return [
             ("testEqualWithTheSameNumberOfFigures", testEqualWithTheSameNumberOfFigures),
             ("testEqualWithDifferentNumberOfFigures", testEqualWithDifferentNumberOfFigures),

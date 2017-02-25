@@ -28,8 +28,8 @@ public class Version: Equatable, CustomStringConvertible {
         
         let length = max(self.components.count, otherVersion.components.count)
         for index in 0..<length {
-            let itemVersion : String = (self.components.count > index) ? self.components[index] : "0"
-            let otherItemVersion : String = (otherVersion.components.count > index) ?otherVersion.components[index] : "0"
+            let itemVersion: String = (self.components.count > index) ? self.components[index] : "0"
+            let otherItemVersion: String = (otherVersion.components.count > index) ?otherVersion.components[index] : "0"
             
             let resultCompare = itemVersion.compare(otherItemVersion)
             if (resultCompare != .orderedSame) {

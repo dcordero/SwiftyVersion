@@ -25,7 +25,7 @@ class VersionInitTests: XCTestCase {
         XCTAssertEqual(sut.components[4], "5", "Wrong component in position 5")
     }
 
-    static var allTests : [(String, (VersionInitTests) -> () throws -> Void)] {
+    static var allTests: [(String, (VersionInitTests) -> () throws -> Void)] {
         return [
             ("testInitWithString", testInitWithString),
 			("testInitWithSpecificSeparator", testInitWithSpecificSeparator)
