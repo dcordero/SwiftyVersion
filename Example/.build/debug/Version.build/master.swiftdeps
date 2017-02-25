@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "0fc45f06451353b75a2a2e66a66779d3"
+build_time: [541378076, 876721000]
+inputs:
+  "/Users/dcordero/Sources/SwiftyVersion/Example/Packages/Version-0.0.1/Sources/Version.swift": [541378075, 0]

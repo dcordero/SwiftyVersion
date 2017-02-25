@@ -1,0 +1,70 @@
+client:
+  name: swift-build
+tools: {}
+targets:
+  "test": ["<SwiftyVersion.module>","<Example.module>","<ExampleTests.module>","<Example.exe>","<ExamplePackageTests.test>"]
+  "main": ["<SwiftyVersion.module>","<Example.module>","<Example.exe>"]
+default: "main"
+commands: 
+  "<SwiftyVersion.module>":
+    tool: swift-compiler
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "SwiftyVersion"
+    module-output-path: "/Users/dcordero/Sources/SwiftyVersion/Example/.build/debug/SwiftyVersion.swiftmodule"
+    inputs: []
+    outputs: ["<SwiftyVersion.module>","/Users/dcordero/Sources/SwiftyVersion/Example/.build/debug/SwiftyVersion.build/Version.swift.o"]
+    import-paths: ["/Users/dcordero/Sources/SwiftyVersion/Example/.build/debug"]
+    temps-path: "/Users/dcordero/Sources/SwiftyVersion/Example/.build/debug/SwiftyVersion.build"
+    objects: ["/Users/dcordero/Sources/SwiftyVersion/Example/.build/debug/SwiftyVersion.build/Version.swift.o"]
+    other-args: ["-j8","-D","SWIFT_PACKAGE","-Onone","-g","-enable-testing","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk","-module-cache-path","/Users/dcordero/Sources/SwiftyVersion/Example/.build/debug/ModuleCache"]
+    sources: ["/Users/dcordero/Sources/SwiftyVersion/Example/Packages/SwiftyVersion-0.0.2/Sources/Version.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: "8"
+
+  "<Example.module>":
+    tool: swift-compiler
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "Example"
+    module-output-path: "/Users/dcordero/Sources/SwiftyVersion/Example/.build/debug/Example.swiftmodule"
+    inputs: ["<SwiftyVersion.module>"]
+    outputs: ["<Example.module>","/Users/dcordero/Sources/SwiftyVersion/Example/.build/debug/Example.build/main.swift.o"]
+    import-paths: ["/Users/dcordero/Sources/SwiftyVersion/Example/.build/debug"]
+    temps-path: "/Users/dcordero/Sources/SwiftyVersion/Example/.build/debug/Example.build"
+    objects: ["/Users/dcordero/Sources/SwiftyVersion/Example/.build/debug/Example.build/main.swift.o"]
+    other-args: ["-j8","-D","SWIFT_PACKAGE","-Onone","-g","-enable-testing","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk","-module-cache-path","/Users/dcordero/Sources/SwiftyVersion/Example/.build/debug/ModuleCache"]
+    sources: ["/Users/dcordero/Sources/SwiftyVersion/Example/Sources/main.swift"]
+    is-library: false
+    enable-whole-module-optimization: false
+    num-threads: "8"
+
+  "<ExampleTests.module>":
+    tool: swift-compiler
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "ExampleTests"
+    module-output-path: "/Users/dcordero/Sources/SwiftyVersion/Example/.build/debug/ExampleTests.swiftmodule"
+    inputs: ["<SwiftyVersion.module>","<Example.module>"]
+    outputs: ["<ExampleTests.module>","/Users/dcordero/Sources/SwiftyVersion/Example/.build/debug/ExampleTests.build/ExampleTests.swift.o"]
+    import-paths: ["/Users/dcordero/Sources/SwiftyVersion/Example/.build/debug"]
+    temps-path: "/Users/dcordero/Sources/SwiftyVersion/Example/.build/debug/ExampleTests.build"
+    objects: ["/Users/dcordero/Sources/SwiftyVersion/Example/.build/debug/ExampleTests.build/ExampleTests.swift.o"]
+    other-args: ["-j8","-D","SWIFT_PACKAGE","-Onone","-g","-enable-testing","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk","-module-cache-path","/Users/dcordero/Sources/SwiftyVersion/Example/.build/debug/ModuleCache"]
+    sources: ["/Users/dcordero/Sources/SwiftyVersion/Example/Tests/ExampleTests/ExampleTests.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: "8"
+
+  "<Example.exe>":
+    tool: shell
+    description: "Linking ./.build/debug/Example"
+    inputs: ["/Users/dcordero/Sources/SwiftyVersion/Example/.build/debug/Example.build/main.swift.o","/Users/dcordero/Sources/SwiftyVersion/Example/.build/debug/SwiftyVersion.build/Version.swift.o"]
+    outputs: ["<Example.exe>","/Users/dcordero/Sources/SwiftyVersion/Example/.build/debug/Example"]
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk","-g","-L/Users/dcordero/Sources/SwiftyVersion/Example/.build/debug","-o","/Users/dcordero/Sources/SwiftyVersion/Example/.build/debug/Example","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-emit-executable","/Users/dcordero/Sources/SwiftyVersion/Example/.build/debug/Example.build/main.swift.o","/Users/dcordero/Sources/SwiftyVersion/Example/.build/debug/SwiftyVersion.build/Version.swift.o"]
+
+  "<ExamplePackageTests.test>":
+    tool: shell
+    description: "Linking ./.build/debug/ExamplePackageTests.xctest/Contents/MacOS/ExamplePackageTests"
+    inputs: ["/Users/dcordero/Sources/SwiftyVersion/Example/.build/debug/ExampleTests.build/ExampleTests.swift.o","/Users/dcordero/Sources/SwiftyVersion/Example/.build/debug/SwiftyVersion.build/Version.swift.o"]
+    outputs: ["<ExamplePackageTests.test>","/Users/dcordero/Sources/SwiftyVersion/Example/.build/debug/ExamplePackageTests.xctest/Contents/MacOS/ExamplePackageTests"]
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk","-g","-L/Users/dcordero/Sources/SwiftyVersion/Example/.build/debug","-o","/Users/dcordero/Sources/SwiftyVersion/Example/.build/debug/ExamplePackageTests.xctest/Contents/MacOS/ExamplePackageTests","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-module-name","ExamplePackageTests","-Xlinker","-bundle","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","/Users/dcordero/Sources/SwiftyVersion/Example/.build/debug/ExampleTests.build/ExampleTests.swift.o","/Users/dcordero/Sources/SwiftyVersion/Example/.build/debug/SwiftyVersion.build/Version.swift.o"]
+

@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/dcordero/Sources/SwiftyVersion/Example/.build/debug/SwiftyVersion.build/master.swiftdeps"
+  },
+  "/Users/dcordero/Sources/SwiftyVersion/Example/Packages/SwiftyVersion-0.0.2/Sources/Version.swift": {
+    "dependencies": "/Users/dcordero/Sources/SwiftyVersion/Example/.build/debug/SwiftyVersion.build/Version.d",
+    "object": "/Users/dcordero/Sources/SwiftyVersion/Example/.build/debug/SwiftyVersion.build/Version.swift.o",
+    "swiftmodule": "/Users/dcordero/Sources/SwiftyVersion/Example/.build/debug/SwiftyVersion.build/Version~partial.swiftmodule",
+    "swift-dependencies": "/Users/dcordero/Sources/SwiftyVersion/Example/.build/debug/SwiftyVersion.build/Version.swiftdeps"
+  }
+}
