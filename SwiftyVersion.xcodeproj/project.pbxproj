@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		OBJ_25 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Version.swift */; };
-		OBJ_32 /* VersionEqualOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* VersionEqualOperatorTests.swift */; };
-		OBJ_33 /* VersionGreaterOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* VersionGreaterOperatorTests.swift */; };
-		OBJ_34 /* VersionInitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* VersionInitTests.swift */; };
-		OBJ_35 /* VersionLowerOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* VersionLowerOperatorTests.swift */; };
-		OBJ_37 /* SwiftyVersion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* SwiftyVersion.framework */; };
+		OBJ_24 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Version.swift */; };
+		OBJ_31 /* VersionEqualOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* VersionEqualOperatorTests.swift */; };
+		OBJ_32 /* VersionGreaterOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* VersionGreaterOperatorTests.swift */; };
+		OBJ_33 /* VersionInitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* VersionInitTests.swift */; };
+		OBJ_34 /* VersionLowerOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* VersionLowerOperatorTests.swift */; };
+		OBJ_36 /* SwiftyVersion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* SwiftyVersion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		FFDA9E451E6244DE006AF608 /* PBXContainerItemProxy */ = {
+		FF7217781E6309A20026FCE6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = OBJ_20;
+			remoteGlobalIDString = OBJ_19;
 			remoteInfo = SwiftyVersion;
 		};
 /* End PBXContainerItemProxy section */
@@ -30,26 +30,25 @@
 		OBJ_13 /* VersionGreaterOperatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionGreaterOperatorTests.swift; sourceTree = "<group>"; };
 		OBJ_14 /* VersionInitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionInitTests.swift; sourceTree = "<group>"; };
 		OBJ_15 /* VersionLowerOperatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionLowerOperatorTests.swift; sourceTree = "<group>"; };
-		OBJ_16 /* Example */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Example; sourceTree = SOURCE_ROOT; };
-		OBJ_18 /* SwiftyVersion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyVersion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_19 /* SwiftyVersionTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = SwiftyVersionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_17 /* SwiftyVersion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyVersion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_18 /* SwiftyVersionTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = SwiftyVersionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_9 /* Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_26 /* Frameworks */ = {
+		OBJ_25 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_36 /* Frameworks */ = {
+		OBJ_35 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_37 /* SwiftyVersion.framework in Frameworks */,
+				OBJ_36 /* SwiftyVersion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,11 +75,11 @@
 			path = Tests/SwiftyVersionTests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_17 /* Products */ = {
+		OBJ_16 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_18 /* SwiftyVersion.framework */,
-				OBJ_19 /* SwiftyVersionTests.xctest */,
+				OBJ_17 /* SwiftyVersion.framework */,
+				OBJ_18 /* SwiftyVersionTests.xctest */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -91,8 +90,7 @@
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
 				OBJ_10 /* Tests */,
-				OBJ_16 /* Example */,
-				OBJ_17 /* Products */,
+				OBJ_16 /* Products */,
 			);
 			name = "";
 			sourceTree = "<group>";
@@ -117,12 +115,12 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		OBJ_20 /* SwiftyVersion */ = {
+		OBJ_19 /* SwiftyVersion */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_21 /* Build configuration list for PBXNativeTarget "SwiftyVersion" */;
+			buildConfigurationList = OBJ_20 /* Build configuration list for PBXNativeTarget "SwiftyVersion" */;
 			buildPhases = (
-				OBJ_24 /* Sources */,
-				OBJ_26 /* Frameworks */,
+				OBJ_23 /* Sources */,
+				OBJ_25 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,24 +128,24 @@
 			);
 			name = SwiftyVersion;
 			productName = SwiftyVersion;
-			productReference = OBJ_18 /* SwiftyVersion.framework */;
+			productReference = OBJ_17 /* SwiftyVersion.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		OBJ_27 /* SwiftyVersionTests */ = {
+		OBJ_26 /* SwiftyVersionTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_28 /* Build configuration list for PBXNativeTarget "SwiftyVersionTests" */;
+			buildConfigurationList = OBJ_27 /* Build configuration list for PBXNativeTarget "SwiftyVersionTests" */;
 			buildPhases = (
-				OBJ_31 /* Sources */,
-				OBJ_36 /* Frameworks */,
+				OBJ_30 /* Sources */,
+				OBJ_35 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_38 /* PBXTargetDependency */,
+				OBJ_37 /* PBXTargetDependency */,
 			);
 			name = SwiftyVersionTests;
 			productName = SwiftyVersionTests;
-			productReference = OBJ_19 /* SwiftyVersionTests.xctest */;
+			productReference = OBJ_18 /* SwiftyVersionTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -166,48 +164,48 @@
 				en,
 			);
 			mainGroup = OBJ_5 /*  */;
-			productRefGroup = OBJ_17 /* Products */;
+			productRefGroup = OBJ_16 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				OBJ_20 /* SwiftyVersion */,
-				OBJ_27 /* SwiftyVersionTests */,
+				OBJ_19 /* SwiftyVersion */,
+				OBJ_26 /* SwiftyVersionTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_24 /* Sources */ = {
+		OBJ_23 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_25 /* Version.swift in Sources */,
+				OBJ_24 /* Version.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_31 /* Sources */ = {
+		OBJ_30 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_32 /* VersionEqualOperatorTests.swift in Sources */,
-				OBJ_33 /* VersionGreaterOperatorTests.swift in Sources */,
-				OBJ_34 /* VersionInitTests.swift in Sources */,
-				OBJ_35 /* VersionLowerOperatorTests.swift in Sources */,
+				OBJ_31 /* VersionEqualOperatorTests.swift in Sources */,
+				OBJ_32 /* VersionGreaterOperatorTests.swift in Sources */,
+				OBJ_33 /* VersionInitTests.swift in Sources */,
+				OBJ_34 /* VersionLowerOperatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_38 /* PBXTargetDependency */ = {
+		OBJ_37 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = OBJ_20 /* SwiftyVersion */;
-			targetProxy = FFDA9E451E6244DE006AF608 /* PBXContainerItemProxy */;
+			target = OBJ_19 /* SwiftyVersion */;
+			targetProxy = FF7217781E6309A20026FCE6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		OBJ_22 /* Debug */ = {
+		OBJ_21 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -227,7 +225,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_23 /* Release */ = {
+		OBJ_22 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -247,7 +245,7 @@
 			};
 			name = Release;
 		};
-		OBJ_29 /* Debug */ = {
+		OBJ_28 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
@@ -263,6 +261,23 @@
 				TARGET_NAME = SwiftyVersionTests;
 			};
 			name = Debug;
+		};
+		OBJ_29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftyVersion.xcodeproj/SwiftyVersionTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				TARGET_NAME = SwiftyVersionTests;
+			};
+			name = Release;
 		};
 		OBJ_3 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -285,23 +300,6 @@
 				USE_HEADERMAP = NO;
 			};
 			name = Debug;
-		};
-		OBJ_30 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = SwiftyVersion.xcodeproj/SwiftyVersionTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				TARGET_NAME = SwiftyVersionTests;
-			};
-			name = Release;
 		};
 		OBJ_4 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -335,20 +333,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_21 /* Build configuration list for PBXNativeTarget "SwiftyVersion" */ = {
+		OBJ_20 /* Build configuration list for PBXNativeTarget "SwiftyVersion" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_22 /* Debug */,
-				OBJ_23 /* Release */,
+				OBJ_21 /* Debug */,
+				OBJ_22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_28 /* Build configuration list for PBXNativeTarget "SwiftyVersionTests" */ = {
+		OBJ_27 /* Build configuration list for PBXNativeTarget "SwiftyVersionTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_29 /* Debug */,
-				OBJ_30 /* Release */,
+				OBJ_28 /* Debug */,
+				OBJ_29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
