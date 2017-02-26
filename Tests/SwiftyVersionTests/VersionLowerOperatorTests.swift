@@ -34,13 +34,4 @@ class VersionLowerOperatorTests: XCTestCase {
         XCTAssertFalse(sut1 < sut2, "Wrong comparison result for operator ==")
         XCTAssertTrue(sut1 <= sut2, "Wrong comparison result for operator ==")
     }
-
-    static var allTests: [(String, (VersionLowerOperatorTests) -> () throws -> Void)] {
-        return [
-            ("testLowerThanWithTheSameNumberOfFigures", testLowerThanWithTheSameNumberOfFigures),
-            ("testLowerThanWithDifferentNumberOfFigures", testLowerThanWithDifferentNumberOfFigures),
-            ("testLowerThanOrEqualWithTheSameNumberOfFigures", testLowerThanOrEqualWithTheSameNumberOfFigures),
-            ("testLowerThanOrEqualWithDifferentNumberOfFigures", testLowerThanOrEqualWithDifferentNumberOfFigures),
-        ]
-    }
 }
