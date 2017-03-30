@@ -32,3 +32,19 @@ print(myVersion1 >= myVersion2) // "false"
 print(myVersion1 < myVersion2)  // "true"
 print(myVersion1 <= myVersion2) // "true"
 ```
+
+## Installation
+
+### Cocoapods
+
+To integrate SwiftyVersion into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
+```ruby
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
+use_frameworks!
+
+target '<Your Target Name>' do
+    pod 'SwiftyVersion', '~> 0.2.1'
+end
+```
