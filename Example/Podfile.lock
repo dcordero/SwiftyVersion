@@ -1,5 +1,5 @@
 PODS:
-  - SwiftyVersion (0.2.0)
+  - SwiftyVersion (0.2.1)
 
 DEPENDENCIES:
   - SwiftyVersion (from `..`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ".."
 
 SPEC CHECKSUMS:
-  SwiftyVersion: 7455be127cd027065b39740a78a59b64af9e468d
+  SwiftyVersion: ba002931305f670830f11f38a4ae6a504ed3b9c2
 
 PODFILE CHECKSUM: 9fcaa16bfe1f971d3226c6327707e85f64379aa0
 
