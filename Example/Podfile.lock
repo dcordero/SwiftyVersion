@@ -1,0 +1,16 @@
+PODS:
+  - SwiftyVersion (0.2.0)
+
+DEPENDENCIES:
+  - SwiftyVersion (from `..`)
+
+EXTERNAL SOURCES:
+  SwiftyVersion:
+    :path: ".."
+
+SPEC CHECKSUMS:
+  SwiftyVersion: 7455be127cd027065b39740a78a59b64af9e468d
+
+PODFILE CHECKSUM: 9fcaa16bfe1f971d3226c6327707e85f64379aa0
+
+COCOAPODS: 1.2.0
